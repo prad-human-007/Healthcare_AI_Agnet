@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "Healthcare AI Agnet",
@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <body>{children}</body>
+      </ThemeProvider>
     </html>
   );
 }
