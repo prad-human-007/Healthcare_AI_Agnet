@@ -17,7 +17,7 @@ export default function Layout({
     <html lang="en">
       <body className="flex flex-col w-full items-center">
         {/* NAVBAR */}
-        <div className="">
+        <div className=" mb-10">
           <nav className="">
             <ul key='list' className="flex flex-row gap-3 mt-5 border border-gray-500 rounded-3xl p-3 shadow-xl  ">
               {pages.map((page) => {
